@@ -1,0 +1,12 @@
+{
+  "name": "time-bomb-render",
+  "version": "1.0.0",
+  "description": "-   [faire une notification](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API)\r -   [détecter le focus de la page](https://developer.mozilla.org/en-US/docs/Web/API/Document/hasFocus)\r -   [stocker le profil et skip la connexion](https://developer.mozilla.org/fr/docs/Web/API/Window/localStorage)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
