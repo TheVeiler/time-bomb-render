@@ -1,0 +1,83 @@
+@keyframes countdown {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(0.2);
+    }
+}
+
+.body {
+    display: grid;
+    grid-template: repeat(9, 1fr) / 1fr;
+}
+
+.list__users {
+    display: grid;
+    height: 100%;
+}
+
+.list__users--all {
+    grid-row: 1 / 9;
+    grid-template: repeat(8, 1fr) / 1fr;
+}
+
+.list__element--friends {
+    grid-row: 1 / 8;
+}
+
+.list__users--friends {
+    grid-template: repeat(7, 1fr) / 1fr;
+}
+
+.usercard.ready {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 99, 33, 0.8) 0%,
+        rgba(0, 60, 20, 0.6) 15%,
+        rgba(0, 60, 20, 0.6) 85%,
+        rgba(0, 99, 33, 0.8) 100%
+    );
+    /* background: linear-gradient(45deg, rgba(0, 60, 20, 0.9) 20%, rgba(0, 0, 0, 0) 70%); */
+}
+
+.pseudo {
+    color: #cfcfcf;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.form {
+    height: 100%;
+}
+
+.section__countdown {
+    align-items: center;
+    display: none;
+    flex-direction: row;
+    font-size: 5rem;
+    font-weight: bold;
+    height: calc(800% / 9);
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+        1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    top: 0;
+    width: 100%;
+}
+
+.section__countdown.started {
+    animation: 4s ease-in 0s 1 normal both running countdown;
+    display: flex;
+}
+
+/* --- à supprimer dans le js aussi ? --- */
+
+.usercard hr {
+    display: none;
+}
+
+.usercard span {
+    display: none;
+}

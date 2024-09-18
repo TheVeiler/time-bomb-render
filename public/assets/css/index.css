@@ -1,0 +1,29 @@
+.body {
+    background-image: url(/public/assets/img/london/2.jpg);
+    box-shadow: inset 1rem 2.5rem 6rem 1rem black;
+    grid-template: 2fr repeat(9, 1fr) / 1fr;
+}
+
+.header {
+    border-radius: 0 0 100% 100%;
+    height: 20vh;
+    width: 100%;
+}
+
+.logo {
+    filter: drop-shadow(0.25rem 0.25rem 0.25rem black);
+    object-fit: contain;
+    width: 100%;
+}
+
+.main {
+    grid-row: 2 / 11;
+    height: 100%; /* firefox fix */
+    width: 100%;
+}
+
+.frame {
+    border: none;
+    height: 100%;
+    width: 100%;
+}

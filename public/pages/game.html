@@ -1,0 +1,41 @@
+<html lang="fr">
+	<head>
+		<link href="../assets/css/reset.css" rel="stylesheet" />
+		<link href="../assets/css/global.css" rel="stylesheet" />
+		<link href="../assets/css/game.css" rel="stylesheet" />
+		<meta charset="UTF-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<script src="../assets/js/global.js"></script>
+		<script defer src="../assets/js/game.js"></script>
+		<title>Partie en cours - Time Bomb</title>
+	</head>
+	<body>
+		<section class="players">
+			<div class="friends" id="friends"></div>
+			<div class="myself" id="myself"></div>
+		</section>
+
+		<section class="me" id="me">
+			<div class="my_role" id="my_role"></div>
+			<div class="my_cards" id="my_cards"></div>
+			<div class="wires_found" id="wires_found">
+				<div class="wire_icon" id="wire_icon"></div>
+				<div class="wire_text" id="wire_text"><span id="nb_wires">0</span>/<span id="nb_wires_max">4</span></div>
+			</div>
+		</section>
+
+		<section class="victoryScreen" id="winners">
+			<p>
+				Les
+				<span class="victoryScreen__text victoryScreen__text--evil">Méchants</span>
+				<span class="victoryScreen__text victoryScreen__text--good">Gentils</span>
+				ont gagné !
+			</p>
+			<p>Les noobs en question : <span id="winners_members"></span></p>
+			<p class=""></p>
+			<form id="form">
+				<button type="submit">Repartir en mission</button>
+			</form>
+		</section>
+	</body>
+</html>

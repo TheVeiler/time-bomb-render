@@ -1,0 +1,10 @@
+{
+    "internal_port": 3000,
+
+    "external_host": "176.137.121.204",
+
+    "elo": {
+        "startValue": 1000,
+        "k_factor": 20
+    }
+}

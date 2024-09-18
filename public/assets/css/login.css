@@ -1,0 +1,39 @@
+.form {
+	display: grid;
+	grid-row: 1 / 10;
+	grid-template: repeat(9, 1fr) / 1fr;
+	height: 100%;
+	width: 100%;
+}
+
+.fieldset {
+	background-color: var(--rouge);
+	backdrop-filter: blur(0.2rem);
+	border: 0;
+	border-radius: 5%;
+	box-shadow: 0 0 0.5rem black;
+	display: flex;
+	flex-direction: column;
+	font-family: var(--font);
+	font-size: 1.2rem;
+	justify-content: space-evenly;
+	gap: 1rem;
+	grid-row: 3 / 7;
+	margin: 0 3rem;
+	padding: 1rem;
+	text-align: center;
+	text-shadow: black 0 0 0.5rem;
+}
+
+.form__title {
+	font-size: 2rem;
+}
+
+.form__text {
+	background: black;
+	color: white;
+	font-family: monospace;
+	padding: 0.75rem;
+	text-align: center;
+	text-transform: uppercase;
+}

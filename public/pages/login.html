@@ -1,0 +1,46 @@
+<html lang="fr">
+	<head>
+		<link href="../assets/css/reset.css" rel="stylesheet" />
+		<link href="../assets/css/global.css" rel="stylesheet" />
+		<link href="../assets/css/login.css" rel="stylesheet" />
+		<meta charset="UTF-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<script src="../assets/js/global.js"></script>
+		<script defer src="../assets/js/login.js"></script>
+		<title>Connexion - Time Bomb</title>
+	</head>
+	<body class="body">
+		<form class="form" id="form" method="get">
+			<fieldset class="fieldset">
+				<h2 class="form__title">Bienvenue, agent secret</h2>
+
+				<label for="username">Veuillez décliner votre nom de code&nbsp;:</label>
+
+				<input autocomplete="username" autofocus class="form__text" id="username" placeholder="Agent Beaver" required type="text" />
+			</fieldset>
+
+			<button class="bottomPart" type="submit">Partir en mission →</button>
+		</form>
+
+		<script>
+			document.querySelector('label').addEventListener('click', function () {
+				alert(
+					'Liste des utilisateurs disponibles (case insensitive) :' +
+						'\n' +
+						'valou' +
+						'\n' +
+						'epavix' +
+						'\n' +
+						'duveon' +
+						'\n' +
+						'nicolas' +
+						'\n' +
+						'simplet' +
+						'\n' +
+						'rintaro' +
+						'\n'
+				);
+			});
+		</script>
+	</body>
+</html>

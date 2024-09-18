@@ -1,0 +1,159 @@
+{
+    "users": {
+        "valou": {
+            "name": "valou",
+            "elo": 1045,
+            "played": {
+                "total": 85,
+                "allies": 35,
+                "foes": 27
+            },
+            "wins": {
+                "total": 47,
+                "allies": 13,
+                "foes": 22
+            },
+            "ready": false
+        },
+        "nicolas": {
+            "name": "nicolas",
+            "elo": 970,
+            "played": {
+                "total": 53,
+                "allies": 36,
+                "foes": 17
+            },
+            "wins": {
+                "total": 25,
+                "allies": 12,
+                "foes": 13
+            },
+            "ready": false
+        },
+        "duveon": {
+            "name": "duveon",
+            "elo": 1047,
+            "played": {
+                "total": 39,
+                "allies": 18,
+                "foes": 16
+            },
+            "wins": {
+                "total": 20,
+                "allies": 4,
+                "foes": 13
+            }
+        },
+        "epavix": {
+            "name": "epavix",
+            "elo": 953,
+            "played": {
+                "total": 18,
+                "allies": 11,
+                "foes": 7
+            },
+            "wins": {
+                "total": 7,
+                "allies": 4,
+                "foes": 3
+            }
+        },
+        "simplet": {
+            "name": "simplet",
+            "elo": 1059,
+            "played": {
+                "total": 74,
+                "allies": 26,
+                "foes": 25
+            },
+            "wins": {
+                "total": 39,
+                "allies": 10,
+                "foes": 19
+            },
+            "ready": false
+        },
+        "noobasse du q": {
+            "name": "noobasse du q",
+            "elo": 1022,
+            "played": {
+                "total": 23,
+                "allies": 0,
+                "foes": 0
+            },
+            "wins": {
+                "total": 13,
+                "allies": 0,
+                "foes": 0
+            }
+        },
+        "rintaro": {
+            "name": "rintaro",
+            "elo": 921,
+            "played": {
+                "total": 23,
+                "allies": 0,
+                "foes": 0
+            },
+            "wins": {
+                "total": 8,
+                "allies": 0,
+                "foes": 0
+            },
+            "ready": false
+        },
+        "brayan": {
+            "name": "brayan",
+            "elo": 997,
+            "played": {
+                "total": 26,
+                "allies": 13,
+                "foes": 13
+            },
+            "wins": {
+                "total": 12,
+                "allies": 5,
+                "foes": 7
+            },
+            "ready": false
+        }
+    },
+    "rooms": {
+        "lobby": {
+            "connected_users": {
+                "valou": {
+                    "name": "valou",
+                    "elo": 1045,
+                    "played": {
+                        "total": 85,
+                        "allies": 35,
+                        "foes": 27
+                    },
+                    "wins": {
+                        "total": 47,
+                        "allies": 13,
+                        "foes": 22
+                    },
+                    "ready": false
+                }
+            },
+            "game_started": false
+        },
+        "game": {}
+    },
+    "match_history": [
+        {
+            "allies": [
+                "valou",
+                "nico"
+            ],
+            "foes": [
+                "tristan",
+                "tibo",
+                "simon"
+            ],
+            "result": 0
+        }
+    ],
+    "server": "off"
+}

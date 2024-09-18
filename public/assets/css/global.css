@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+	--rouge: rgb(120 24 24 / 60%);
+	--rouge-fonce: rgba(88, 15, 15, 0.6);
+	--gris: #aaa;
+	/* --font: 'Lora', serif; */
+	--font: Lato;
+}
+
+/* CASCADE */
+
+body {
+	align-items: center;
+	background: transparent;
+	background-size: cover;
+	background-position: 30%;
+	color: beige;
+	display: grid;
+	font-family: var(--font);
+	grid-template: repeat(9, 1fr) / 1fr;
+	height: 100vh;
+	justify-content: center;
+	user-select: none;
+}
+
+input {
+	padding: 5px 10px;
+
+	-webkit-tap-highlight-color: transparent;
+}
+
+button {
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+}
+
+button:active {
+	background-color: var(--rouge-fonce);
+}
+
+/* BEM */
+
+.usercard {
+	align-items: center;
+	background: linear-gradient(180deg, rgba(40, 40, 40, 0.8) 0%, rgba(0, 0, 0, 0.6) 15%, rgba(0, 0, 0, 0.6) 85%, rgba(40, 40, 40, 0.8) 100%);
+	display: flex;
+	padding-left: 1rem;
+}
+
+.list__element--friends .usercard:nth-of-type(1) {
+	grid-row: 7;
+}
+.list__element--friends .usercard:nth-of-type(2) {
+	grid-row: 6;
+}
+.list__element--friends .usercard:nth-of-type(3) {
+	grid-row: 5;
+}
+.list__element--friends .usercard:nth-of-type(4) {
+	grid-row: 4;
+}
+.list__element--friends .usercard:nth-of-type(5) {
+	grid-row: 3;
+}
+.list__element--friends .usercard:nth-of-type(6) {
+	grid-row: 2;
+}
+.list__element--friends .usercard:nth-of-type(7) {
+	grid-row: 1;
+}
+
+.bottomPart {
+	backdrop-filter: blur(0.2rem);
+	background-color: var(--rouge);
+	border: 0;
+	box-shadow: 0 0 0.5rem black;
+	color: white;
+	font-family: var(--font);
+	font-size: 1.2em;
+	font-weight: bold;
+	grid-row: 9;
+	height: 100%;
+	padding: 20px 50px;
+	text-shadow: black 0 0 0.5rem;
+	width: 100%;
+}

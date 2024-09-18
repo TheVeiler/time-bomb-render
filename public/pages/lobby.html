@@ -1,0 +1,30 @@
+<html lang="fr">
+	<head>
+		<link href="../assets/css/reset.css" rel="stylesheet" />
+		<link href="../assets/css/global.css" rel="stylesheet" />
+		<link href="../assets/css/lobby.css" rel="stylesheet" />
+		<meta charset="UTF-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<script src="../assets/js/global.js"></script>
+		<script defer src="../assets/js/lobby.js"></script>
+		<title>Salon - Time Bomb</title>
+	</head>
+	<body class="body">
+		<ul class="list__users list__users--all" id="connected_users">
+			<li class="list__element--friends">
+				<ul class="list__users list__users--friends" id="friends"></ul>
+			</li>
+			<li>
+				<ul class="list__users" id="myself"></ul>
+			</li>
+		</ul>
+
+		<form class="form" id="form" method="get">
+			<button autofocus class="bottomPart" id="submitButton" type="submit">Commencer le déminage →</button>
+		</form>
+
+		<section class="section__countdown" id="countdown">
+			<p>Début de la mission dans <span id="timeLeft"></span>s</p>
+		</section>
+	</body>
+</html>
