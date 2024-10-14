@@ -1,217 +1,220 @@
 .players {
-  /* display: flex;
+    /* display: flex;
 	flex-direction: column;
 	flex: 8;
 	justify-content: space-around; */
 
-  display: grid;
-  grid-row: 1 / 9;
-  grid-template: repeat(8, 1fr) / 1fr;
-  height: 100%;
+    display: grid;
+    grid-row: 1 / 9;
+    grid-template: repeat(8, 1fr) / 1fr;
+    height: 100%;
 }
 
 .me {
-  height: 100%;
+    height: 100%;
 }
 
 .friends {
-  /* align-items: center;
+    /* align-items: center;
 	display: grid;
 	flex-grow: 7;
 	justify-content: center; */
 
-  display: grid;
-  grid-row: 1 / 8;
-  grid-template: repeat(7, 1fr) / 1fr;
+    display: grid;
+    grid-row: 1 / 8;
+    grid-template: repeat(7, 1fr) / 1fr;
 }
 
 /*  */
 
 #myself {
-  display: flex;
-  flex-grow: 1;
+    display: flex;
+    flex-grow: 1;
 }
 
 .usercard {
-  align-items: center;
-  /* background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(0, 2, 39) 100%); */
-  background: linear-gradient(
-    45deg,
-    rgba(0, 0, 0, 0.9) 20%,
-    rgba(0, 0, 0, 0) 70%
-  );
-  border-bottom: 3px solid transparent;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  justify-content: space-between;
-  padding-left: 10px;
-  position: relative;
-  width: 100%;
+    align-items: center;
+    /* background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(0, 2, 39) 100%); */
+    background: linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.9) 20%,
+        rgba(0, 0, 0, 0) 70%
+    );
+    border-bottom: 3px solid transparent;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-between;
+    padding-left: 10px;
+    position: relative;
+    width: 100%;
 }
 
 .usercard .pseudo {
-  /* bottom: 10px; */
-  color: var(--gris);
-  font-family: var(--font);
-  /* margin: 0; */
-  /* position: absolute; */
-  text-transform: capitalize;
-  /* transform: scale(1.1, 1.4); */
+    /* bottom: 10px; */
+    color: var(--gris);
+    font-family: var(--font);
+    /* margin: 0; */
+    /* position: absolute; */
+    text-transform: capitalize;
+    /* transform: scale(1.1, 1.4); */
 
-  /* font-optical-sizing: auto; */
-  /* font-weight: 400; */
+    /* font-optical-sizing: auto; */
+    /* font-weight: 400; */
 }
 
 .usercard.pliers .pseudo {
-  color: white;
-  font-size: 1.4rem;
+    color: white;
+    font-size: 1.4rem;
+    flex: 1;
 }
 
 .usercard hr {
-  display: none;
+    display: none;
 }
 
 .usercard span {
-  display: none;
+    display: inline-block;
 }
 
 .players div.usercard div.hand {
-  /* background: linear-gradient(180deg, black, transparent); */
-  /* border-radius: 10%; */
-  /* box-shadow: inset 0 3px rgb(75, 75, 75); */
-  display: flex;
-  justify-content: space-evenly;
-  /* left: calc(190px / 2 - 175px); */
-  /* padding-top: 10px; */
-  /* position: absolute; */
-  /* top: calc(190px - 45px); */
-  /* width: 350px; */
+    /* background: linear-gradient(180deg, black, transparent); */
+    /* border-radius: 10%; */
+    /* box-shadow: inset 0 3px rgb(75, 75, 75); */
+    display: flex;
+    justify-content: space-evenly;
+    /* left: calc(190px / 2 - 175px); */
+    /* padding-top: 10px; */
+    /* position: absolute; */
+    /* top: calc(190px - 45px); */
+    /* width: 350px; */
 
-  position: unset;
-  background: none;
-  height: 90%;
+    position: unset;
+    background: none;
+    height: 90%;
 }
 
 .usercard .hand .card {
-  aspect-ratio: 2 / 3;
-  height: 100%;
-  margin: 0 5px;
+    background-size: 100% auto !important;
+    width: 66px;
+
+    height: 100%;
+    margin: 0 5px;
 }
 
 .usercard .hand .card.hidden {
-  background: url("../img/Carte_Verso.svg");
+    background: url("../img/Carte_Verso.svg");
 }
 
 .players div.usercard div.hand div.card.nothing {
-  background: url("../img/Carte_Rien.svg");
+    background: url("../img/Carte_Rien.svg");
 }
 
 .players div.usercard div.hand div.card.wire {
-  background: url("../img/Carte_Cable.svg");
+    background: url("../img/Carte_Cable.svg");
 }
 
 .players div.usercard div.hand div.card.bomb {
-  background: url("../img/Carte_Bombe.svg");
+    background: url("../img/Carte_Bombe.svg");
 }
 
 #me {
-  align-items: center;
-  background-color: var(--rouge);
-  box-sizing: border-box;
-  display: grid;
-  flex: 1;
-  grid-template: 1fr / 1fr 5fr 1fr;
-  justify-content: center;
+    align-items: center;
+    background-color: var(--rouge);
+    box-sizing: border-box;
+    display: grid;
+    flex: 1;
+    grid-template: 1fr / 1fr 5fr 1fr;
+    justify-content: center;
 }
 
 #my_role {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  flex-grow: 1;
-  height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    flex-grow: 1;
+    height: 90%;
 }
 
 #me.allies #my_role {
-  background-image: url("../img/allies.png");
+    background-image: url("../img/allies.png");
 }
 
 #me.foes #my_role {
-  background-image: url("../img/foes.png");
+    background-image: url("../img/foes.png");
 }
 
 #my_cards {
-  display: flex;
-  flex-grow: 5;
-  height: 90%;
-  justify-content: space-evenly;
+    display: flex;
+    flex-grow: 5;
+    height: 90%;
+    justify-content: space-evenly;
 }
 
 #my_cards div.card {
-  aspect-ratio: 2 / 3;
-  display: block;
+    aspect-ratio: 2 / 3;
+    display: block;
 }
 #my_cards div.card.nothing {
-  background-image: url("../img/Carte_Rien.svg");
+    background-image: url("../img/Carte_Rien.svg");
 }
 #my_cards div.card.wire {
-  background: url("../img/Carte_Cable.svg");
+    background: url("../img/Carte_Cable.svg");
 }
 #my_cards div.card.bomb {
-  background-image: url("../img/Carte_Bombe.svg");
+    background-image: url("../img/Carte_Bombe.svg");
 }
 
 #wires_found {
-  color: var(--gris);
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  justify-content: center;
+    color: var(--gris);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
 }
 
 #wire_icon {
-  background: url("../img/Carte_Cable.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto 85%;
-  height: 30px;
-  width: 100%;
+    background: url("../img/Carte_Cable.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 85%;
+    height: 30px;
+    width: 100%;
 }
 
 #wire_text {
-  color: var(--gris);
-  font-weight: bold;
-  text-align: center;
+    color: var(--gris);
+    font-weight: bold;
+    text-align: center;
 }
 
 .victoryScreen {
-  align-items: center;
-  background-color: #120e2f;
-  display: none;
-  flex-direction: column;
-  font-size: 1.2em;
-  height: 100%;
-  justify-content: center;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
+    align-items: center;
+    background-color: #120e2f;
+    display: none;
+    flex-direction: column;
+    font-size: 1.2em;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .victoryScreen.visible {
-  display: flex;
+    display: flex;
 }
 
 .victoryScreen__text {
-  display: none;
+    display: none;
 }
 
 .victoryScreen.good .victoryScreen__text--good {
-  display: inline;
+    display: inline;
 }
 
 .victoryScreen.evil .victoryScreen__text--evil {
-  display: inline;
+    display: inline;
 }
